@@ -1,0 +1,65 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+:root{
+    --firstColor:rgb(249,249,249);
+    --secondColor:rgba(92, 177, 42, 0.637);
+    --fontMain: 'Roboto', sans-serif;
+    
+}
+
+body{
+    background:linear-gradient(180deg, rgba(0,36,1,1) 24%, rgba(9,121,38,1) 62%, rgba(11, 91, 27, 0.66) 95%);
+    margin: 0 8px;
+    font-family: var(--fontMain);
+}
+
+header{
+   background-image: url(../image/Football_Stadium.jpeg);
+   background-position:bottom;
+   background-size: 100% 200%;
+   background-repeat: no-repeat;
+   height:215px;
+   width:100%;
+   text-align: center;
+   color:var(--firstColor); 
+   padding: 30px 0px;
+}
+
+h1{
+    font-weight: bold;
+    font-size:35px;
+    word-spacing: 5px;  
+    margin:20px;
+}
+
+main .sport{
+    background-color:var(--secondColor);
+    padding:50px;
+    text-align: center;
+    
+}
+
+img{
+   width: 450px;
+   margin:30px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+h2+p{
+    line-height: 50px;
+}
+
+a{
+    color:var(--firstColor);
+    text-decoration: none;
+}
+footer{
+    margin:20px;
+    color:var(--firstColor);
+    text-align: center;
+}
