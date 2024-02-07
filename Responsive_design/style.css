@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+header{
+    display:inline-block;
+    text-align: center;
+    background-image:url(./images/backgroundProject.png);
+    padding:14px 0px;
+    width:100%;
+    height:70px;
+    position: fixed;
+    top: 0px;
+}
+
+header h1{
+    color:rgb(55,43,43);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    margin:8px;
+}
+
+nav{
+    padding: 0px 630px;
+}
+
+nav .menu-btn i{
+    color:rgb(55,43,43);
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+}
+
+nav ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li a{
+    color: rgb(55,43,43);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+
+
+main .movies{
+    margin: 120px 200px;   
+}
+
+
+main .cards{
+    margin:28px;
+    padding:23px;
+    display:inline-block;
+    border: 2px solid rgb(241,240,240);
+    border-radius: 5px;
+    width:270px;
+    height: 440px;
+    box-shadow:rgb(150,150,150)10px 10px 20px 10px;
+}
+
+.cards img{
+    border-radius: 3px;
+    width:270px;
+    height:325px;
+    
+}
+
+h2{
+    font-family:'Roboto', sans-serif;
+    font-weight:bold;
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 14px;
+    line-height:40px;
+}
+p{
+  font-family: 'Roboto',sans-serif;
+  line-height: 25px;
+  font-size: 14px;
+  text-align: left;
+}
+a{
+    font-family: 'Roboto',sans-serif;
+    text-decoration:none;
+    line-height: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-image: url(./images/backgroundProject.png);
+    height:100px
+}
+
+footer small{
+    font-family:'Roboto',sans-serif;
+    margin: 40px;
+}
+
+#click{
+    display: none;
+}
+
+@media(max-width:900px){
+
+
+nav ul{
+    position:fixed;
+    top:80px;
+    left:-100%;
+    background: #FFFEFE;
+    height:100vh;
+    width: 100%;
+    display: block;
+}
+
+nav ul li{
+    margin: 40px 0;
+}
+
+nav .menu-btn i{
+    margin: 10px;
+    display: block;
+    left:360px;
+    top: 50px;
+    position: absolute;
+
+}
+
+#click:checked ~ ul{
+    left: 0%;
+}
+
+#click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+
+  input .menu-btn i{
+    display: block;
+}
+
+nav ul li a {
+    font-size: 20px;
+    display: block;
+}
+    
+   
+}
